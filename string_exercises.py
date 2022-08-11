@@ -1,5 +1,5 @@
 """"
-String Exercise
+String Exercises
 """
 
 #1. Write a program to create a new string made of the middle three characters
