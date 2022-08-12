@@ -1,3 +1,4 @@
-# gitfirstproject
-first GIT course testing
-changes
+### Data Science Course:
+
+1. GIT
+2. Python
