@@ -5,6 +5,7 @@
     allow duplicates
     changeable - add, remove, replace
 """
+import string
 
 mylist = ['apples','mangoes', 2, 7.5, 'red']
 print(type(mylist)) # returns the type of the list
