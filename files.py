@@ -42,8 +42,3 @@ with open('test.txt', 'a') as f:
 
 if os.path.exists('test.txt'):
     os.remove('test.txt')   #removes a file
-
-
-
-
-

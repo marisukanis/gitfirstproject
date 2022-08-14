@@ -129,11 +129,91 @@ For example:
 "Jim Morrison" and "Mr. Mojo Risin"
 "Tom Marvolo Riddle" and "I am Lord Voldemort"
 """
-def are_anagrams(napis1, napis2): # you can also use, for example, Counter
-    napis1 = sorted(napis1.lower().replace(" ", ""))
-    napis2 = sorted(napis2.lower().replace(" ", ""))
-    return napis1 == napis2
+# def are_anagrams(napis1, napis2): # you can also use, for example, Counter
+#     napis1 = sorted(napis1.lower().replace(" ", ""))
+#     napis2 = sorted(napis2.lower().replace(" ", ""))
+#     return napis1 == napis2
+#
+# if __name__ == "__main__":
+#     print(are_anagrams("Tom Marvolo Riddle", "I am Lord Voldemort"))
+#     print(are_anagrams("Ala has a cat", "Cat has Ala"))
+#
+# #Practice execrises:
+# #Given two integer numbers return their product only if the
+# # product is equal to or lower than 1000, else return their sum.
+#
+# def number_function(number1, number2):
+#     product = number1 * number2
+#     if product <= 1000:
+#         return product
+#     else:
+#         return number1 + number2
+#
+# result = number_function(20, 30)
+# print('The result is: ', result)
+#
+# result = number_function(40, 30)
+# print('The result is: ', result)
 
-if __name__ == "__main__":
-    print(are_anagrams("Tom Marvolo Riddle", "I am Lord Voldemort"))
-    print(are_anagrams("Ala has a cat", "Cat has Ala"))
+#QUESTIONS:
+#Q1: given 2 strings, can you make first string from
+# the second by deleting some characters. Can use 'counter', intersect
+s1 = "Hello"
+s2 = "vufigsaiHudesdflelio"
+
+count = 0
+for ch in s1.lower():
+    if ch in s2.lower():
+        count += 1
+
+    print(couny)
+    if count == len(s1):
+        print("Possible")
+    else:
+        print("Not possible")
+
+#Q2: Sum numbers until flag -9999 is seen.
+#Methods: You can save the numbers in a list and compute
+# You can use while loop
+# my_list2 = [10, 23.4, 67, -9999, 7, 8, 100]
+
+# 1. You can save the numbers in a list and compute
+# 2. can use positional arguments
+# 3. use loop
+
+my_list2 = [10, 23.4, 67, -9999, 7, 8, 100]
+def sum_number(nums: List) -> float:
+    sum = 0
+    for x in nums:
+        if x != -9999:
+            sum += x
+        else:
+            break
+        return sum
+
+sum_number(my_list2)
+
+
+#Q3: Find the min and max of set of numbers
+# number1 = [2, 5, 7, 10]
+# smallest = min(number1)
+# print(smallest)
+# biggest = max(number1)
+# print(biggest)
+
+def get_min_max(*args):
+    return min(args), max(args)
+
+get_min_max(12, 67, -234, -98, 100)
+
+#Q4: Count the number of odd and even elements in a list.
+# my_list = [2, 5, 7, 10]
+# even_count, odd_count = 0, 0
+#
+# for i in my_list:
+#     if i % 2 == 0:
+#         even_count += 1
+#     else:
+#         odd_count += 1
+# print("Even numbers available in the list: ", even_count)
+# print("Odd numbers available in the list: ", odd_count)
