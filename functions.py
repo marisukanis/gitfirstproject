@@ -31,8 +31,8 @@ def <<function_name>>(<<argument>>, ....., <<arguments>>):
     return <<data>>
 """
 
-#def my_name(name, age):
-  #  print(f'You have a lovely name {name} for your age {age}')
+def my_name(name, age):
+    print(f'You have a lovely name {name} for your age {age}')
 #my_name('Maris', 10) # calling the function
 #my_name(name='Maris', age=10)   # it's called named argument
 
@@ -73,8 +73,8 @@ def get_shape(len=3, breadth=5):
     else:
         print(f"Shape is a rectangle with area {area_of_rectangle(len, breadth)}")
 
-get_shape(len=10, breadth=8)
-get_shape()
+#get_shape(len=10, breadth=8)
+#get_shape()
 
 def isogram(word):
     l = [x for x in word]
