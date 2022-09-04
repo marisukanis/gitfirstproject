@@ -35,3 +35,16 @@ P = 3 / 6
 P = 1 / 2
 
 (1/3) / (1/2) = 2/3 = 66%
+
+"""
+Example:
+There are 10 white and 7 black balls in the urn. We take out one random ball and throw it
+away without checking the color. What is the chance to draw a white ball the second time?
+Solution:
+Let’s introduce the markings:
+A - the second time we pulled out the white ball,
+B - the first time we took out a white ball,
+C - the first time we pulled out the black ball. We want to calculate the probability of the event A. We use the formula for the total
+probability:
+"""
+

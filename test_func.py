@@ -26,3 +26,10 @@ class TestFixture(unittest.TestCase):
     def test_true_is_true(self):
         self.assertTrue(True)
 
+    def test_exception(self):
+        with self.assertRaises(ZeroDivisionError):
+            10/0
+
+    def test_exception_name_error(self):
+        with self.assertRaises(NameError):
+            print(xyzz)
